@@ -1,5 +1,4 @@
-//Nome: João Vitor de Faria
-//Matrícula:2019006030
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<utility>  
@@ -68,7 +67,7 @@ void huffman(char letras[], int frequencia[], int tamanho)
 	{
 		arvore.push(new node(letras[i], frequencia[i]));
 	}
-	//aqui eu começo a juntar os nodes e vou fazer isso enquanto nao chega a um no que possui a soma de todas frequencias
+	//aqui eu comeÃ§o a juntar os nodes e vou fazer isso enquanto nao chega a um no que possui a soma de todas frequencias
 	while(arvore.size() != 1)
 	{
 		esquerda = arvore.top();
@@ -107,7 +106,7 @@ int main()
 	char caracteresComOcorrencia[5000];
 	int frequenciaCaracteresComOcorrencia[5000];
 	int contVetorOcorrencia = 0;
-	//agora eu percorro o vetor das ocorrencias e salvo em outro vetor só os caracteres que tiveram ocorrencia e sua frequencia
+	//agora eu percorro o vetor das ocorrencias e salvo em outro vetor sÃ³ os caracteres que tiveram ocorrencia e sua frequencia
 	for(int i = 0; i < 95; i++)
 	{
 		if(int(contaOcorrenciaCaracteres[i]) > 0)
